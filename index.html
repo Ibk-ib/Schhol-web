@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/solid.min.css">
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="eduford_img/5c7d7088-f213-4adf-87c8-8ddf8d091d6d-removebg-preview.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark"onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">COURSE</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars"onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>World's Biggest University</h1>
+            <p>Making website is now one of the easiest thing in the world. You just need to learn HTML, CSS, <br>Javascript and you are good to go.</p>
+            <a href="" class="hero-btn">Visit Us To Know More</a>
+
+        </div>
+    </section>
+          <!---Course-->
+          <section class="course">
+            <h1>Courses We offer</h1>
+            <p>Discover a range of engaging courses that support every student’s growth—academically, creatively, and personally.</p>
+            <div class="row">
+                <div class="course-col">
+                    <h3>Intermediate</h3>
+                    <p>Our intermediate courses are designed to strengthen core subjects while encouraging curiosity, critical thinking, and personal development in students.</p>
+                </div>
+                <div class="course-col">
+                    <h3>Degree</h3>
+                    <p>Our degree programs offer in-depth knowledge, practical skills, and industry exposure to prepare students for successful careers and lifelong learning.</p>
+                </div>
+                <div class="course-col">
+                    <h3>Post Graduation</h3>
+                    <p>Our postgraduate programs are designed to deepen expertise, foster research and innovation, and equip students with the advanced skills needed to lead in their fields.</p>
+                </div>
+            </div>
+          </section>
+
+
+
+
+
+
+    
+    <!------Javascript for toggle Menu----->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
